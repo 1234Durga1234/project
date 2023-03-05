@@ -1,0 +1,586 @@
+<html>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Harmattan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+ <style>
+    *{
+        margin: 0px;
+    }
+    nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+   }
+   .right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .c2{
+    display: none;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .c1{
+    position: relative;
+  }
+  .c2 div{
+    padding-top: 15px;
+    color: rgb(31, 18, 221);
+  }
+  .c1:hover .c2{
+    display: block;
+  }
+   .left{
+    width: 15%;
+    height: 10vh;
+     }
+   .right a:hover{
+    font-size: 17px;
+   }
+   a{
+    text-decoration: none;
+   }
+   .heading{
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    background-color: rgb(103, 5, 194);
+   }
+   .heading-text{
+    width: 100%;
+    height: 30vh;
+    font-size: 50px;
+    color: whitesmoke;
+    padding-top: 130px;
+    font-family: 'Artifika';
+   }
+   .container{
+    width: 100%;
+   }
+   .con{
+    width: 70%;
+    height: 50vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto;
+    margin-top: 45px;
+    grid-gap: 20px;
+   }
+   .c6{
+    background-color: rgb(255, 255, 255);
+   }
+   .c6 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .c8{
+    background-color: rgb(242, 247, 241);
+   }
+   .c8 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .text{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .lefttext{
+    width: 100%;
+   }
+   .righttext{
+    width: 100%;
+   }
+   .a{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .b{
+    font-size: 25px;
+    color: rgb(53, 24, 170);
+    line-height: 30px;
+    padding-top: 7px;
+    margin-left:15px ;
+   }
+   .c{
+    font-size:20px;
+    line-height: 20px;
+    padding-left: 15px;
+    font-family: 'Harmattan';
+   }
+   .x{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .y{
+    font-size: 25px;
+    color: rgb(57, 14, 164);
+    line-height: 30px;
+    padding-top: 7px;
+    margin-left:15px ;
+    margin-bottom: 15px;
+   }
+   .z{
+    font-size:20px;
+    line-height: 20px;
+    margin-left:15px ;
+    font-family: 'Harmattan';
+   }
+   .container1{
+    width: 100%;
+   }
+   .con1{
+    width: 70%;
+    height: 50vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto;
+    margin-top: 45px;
+    grid-gap: 20px;
+   }
+   .c61{
+    background-color: rgb(255, 255, 255);
+   }
+   .c61 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .c81{
+    background-color: rgb(242, 247, 241);
+   }
+   .c81 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .text1{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .lefttext1{
+    width: 100%;
+   }
+   .righttext1{
+    width: 100%;
+   }
+   .a1{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .b1{
+    font-size: 25px;
+    color: rgb(53, 24, 170);
+    line-height: 30px;
+    padding-top: 10px;
+    margin-left:15px ;
+    padding-bottom: 10px;
+   }
+   .c11{
+    font-size:20px;
+    line-height: 20px;
+    padding-left: 15px;
+    font-family: 'Harmattan';
+   }
+   .x1{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .y1{
+    font-size: 25px;
+    color: rgb(57, 14, 164);
+    line-height: 30px;
+    padding-top: 7px;
+    margin-left:15px ;
+    margin-bottom: 15px;
+   }
+   .z1{
+    font-size:20px;
+    line-height: 20px;
+    margin-left:15px ;
+    font-family: 'Harmattan';
+   }
+   .container2{
+    width: 100%;
+   }
+   .con2{
+    width: 70%;
+    height: 50vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto;
+    margin-top: 45px;
+    grid-gap: 20px;
+    margin-bottom: 15px;
+   }
+   .c62{
+    background-color: rgb(255, 255, 255);
+   }
+   .c62 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .c82{
+    background-color: rgb(242, 247, 241);
+   }
+   .c82 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .text2{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .lefttext2{
+    width: 100%;
+   }
+   .righttext2{
+    width: 100%;
+   }
+   .a2{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .b2{
+    font-size: 25px;
+    color: rgb(53, 24, 170);
+    line-height: 30px;
+    padding-top: 10px;
+    margin-left:15px ;
+    padding-bottom: 10px;
+   }
+   .c21{
+    font-size:20px;
+    line-height:  20px;
+    padding-left: 15px;
+    font-family: 'Harmattan';
+   }
+   .x2{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .y2{
+    font-size: 25px;
+    color: rgb(57, 14, 164);
+    line-height: 30px;
+    padding-top: 7px;
+    margin-left:15px ;
+    margin-bottom: 15px;
+   }
+   .z2{
+    font-size:20px;
+    line-height: 20px;
+    margin-left:15px ;
+    font-family: 'Harmattan';
+   }
+   .container3{
+    width: 100%;
+   }
+   .con3{
+    width: 70%;
+    height: 50vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto auto;
+    margin-top: 45px;
+    grid-gap: 20px;
+    margin-bottom: 15px;
+   }
+   .c63{
+    background-color: rgb(255, 255, 255);
+   }
+   .c63 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .c83{
+    background-color: rgb(242, 247, 241);
+   }
+   .c83 img{
+    width: 100%;
+    height: 50vh;
+   }
+   .text3{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+   }
+   .lefttext3{
+    width: 100%;
+   }
+   .righttext3{
+    width: 100%;
+   }
+   .a3{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .b3{
+    font-size: 25px;
+    color: rgb(53, 24, 170);
+    line-height: 30px;
+    padding-top: 10px;
+    margin-left:15px ;
+    padding-bottom: 10px;
+   }
+   .c3{
+    font-size:20px;
+    line-height:  20px;
+    padding-left: 15px;
+    font-family: 'Harmattan';
+   }
+   .x3{
+    letter-spacing: 3px;
+    font-size: 15px;
+  padding: 15px;
+   }
+   .y3{
+    font-size: 25px;
+    color: rgb(57, 14, 164);
+    line-height: 30px;
+    padding-top: 7px;
+    margin-left:15px ;
+    margin-bottom: 15px;
+   }
+   .z3{
+    font-size:20px;
+    line-height: 20px;
+    margin-left:15px ;
+    font-family: 'Harmattan';
+   }
+   .btm{
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(92, 2, 176);
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 35px;
+        color: white;
+       }
+       .btm1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+       }
+       .btm2{
+        padding-top: 15px;
+       }
+       .down{
+        position: relative;
+        top: 10px;
+        line-height: 20px;
+       }
+       h6{
+        font-size: 20px;
+       }
+       .down1{
+        position: relative;
+        top: 24px;
+        line-height: 20px;
+       }
+       .abc{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(103, 5, 194);
+        border: none;
+       }
+       .all{
+        padding-left: 50px;
+        padding-top: 15px;
+       }
+       .icon{
+        position: relative;
+        top: 30px;
+        font-size:25px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+       }
+   
+</style>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <img src="https://naturals.in/wp-content/uploads/2022/06/Naturals.svg"/>
+            </div>
+            <div class="right">
+             <div class="c1"><a href="nature.html"> Our Services</a>
+            <div class="c2">
+            <div><a href="hair.html">hair care</a></div>
+            <div><a href="skincare.html">skin care</a></div>
+            </div>
+            </div>
+            <div><a href="bridalmakeup.htm">Bridal</a></div>
+            <div><a href="blogs.html">Blogs</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+        </div>
+    </nav>
+    <div class="heading">
+        <div class="heading-text">Blogs</div>
+    </div>
+    <div class="container">
+       <div class="con">
+        <div class="c6">
+            <img src="https://naturals.in/wp-content/uploads/2022/12/Blog-Feature-Image-01-1536x1180.jpg"/>
+        </div>
+        <div class="c8">
+            <img src="https://naturals.in/wp-content/uploads/2022/09/Blog-Feature-Images-01_11zon-1-1536x1180.jpg"/>
+        </div>
+    </div>
+    </div>
+    <div class="text">
+       <div class="lefttext">
+        <div class="a">NOVEMBER 1, 2022</div>
+        <div class="b">It’s Raining Myths! Busting 7 Lifestyle Myths About Monsoons</div><br>
+        <div class="c">Where people and cultures converge, myths and folklore are a natural extension of life and...</div>
+       </div>
+       <div class="righttext">
+        <div class="x">SEPTEMBER 12, 2022</div>
+        <div class="y">5 Grooming Essentials For The Workplace</div>
+        <div class="z">Personal grooming is key to enhancing our overall appearance. It boosts our self-assurance...</div>
+       </div>
+    </div>
+    <div class="container1">
+     <div class="con1">
+      <div class="c61">
+       <img src="https://naturals.in/wp-content/uploads/2022/09/Blog-Feature-Images-02_11zon-1536x1180.jpg"/>
+      </div>
+      <div class="c81">
+        <img src="https://naturals.in/wp-content/uploads/2022/08/Skin-types-1536x1180.jpg"/>
+      </div>
+     </div>
+    </div>
+    <div class="text1">
+      <div class="lefttext1">
+        <div class="a1">SEPTEMBER 3, 2022</div>
+        <div class="b1">Easy Personal Grooming Tips That All Women Need To Know</div>
+        <div class="c11">Everyone appreciates someone who takes care of themselves. One must maintain their appeara...</div>
+      </div>
+      <div class="righttext1">
+        <div class="x1">JULY 16, 2022</div>
+        <div class="y1">Here’s How To Create A Skincare Routine For All Skin Types!</div>
+        <div class="z1">All skin types, we said. So, just how many are there? As many individuals, it wouldn...</div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="con2">
+       <div class="c62">
+       <img src="https://naturals.in/wp-content/uploads/2022/08/Leaders-in-heels-1-1536x1180.jpg"/>
+       </div>
+       <div class="c82">
+        <img src="https://naturals.in/wp-content/uploads/2022/06/Stunning-Looks-Compact-Budget-1-1536x1180.jpg"/>
+       </div>
+      </div>
+    </div>
+    <div class="text2">
+      <div class="lefttext2">
+        <div class="a2">JULY 4, 2022</div>
+        <div class="b2">Leaders In Heels: Inspiring Women Entrepreneurs From Around The World </div>
+        <div class="c21">This is a collection of stories about inspiring women from around the world. Entrepreneurs..</div>
+      </div>
+      <div class="righttext2">
+        <div class="x2">JUNE 12, 2022</div>
+        <div class="y2">Stunning Looks On A Compact Budget</div>
+        <div class="z2">You are Natural when you are yourself. All you need are a few simple routines and touches ...</div>
+      </div>
+    </div>
+    <div class="container3">
+      <div class="con3">
+       <div class="c63">
+       <img src="https://naturals.in/wp-content/uploads/2022/06/Y2K-Makeup-Trends-1536x1180.jpg"/>
+       </div>
+       <div class="c83">
+        <img src="https://naturals.in/wp-content/uploads/2022/05/Blog-Feature-Images-07_11zon-1536x1180.jpg"/>
+       </div>
+      </div>
+    </div>
+    <div class="text3">
+      <div class="lefttext3">
+        <div class="a3">JUNE 9, 2022</div>
+        <div class="b3">Y2K Makeup Trends – Looking Back At Retro Inspiration</div>
+        <div class="c3">What’s Natural today was ‘make-up’ yesterday, and yesterday’s make-up was outr...</div>
+      </div>
+      <div class="righttext3">
+        <div class="x3">MAY 23, 2022</div>
+        <div class="y3">Redefining Training Techniques In Beauty And Wellness</div>
+        <div class="z3">2020 was a watershed moment in every sector, including beauty. As customers had fewer soci...</div>
+      </div>
+    </div>
+    <div class="btm">
+      <div class="btm1">
+        <h6>Quick Links</h6>
+          <div class="down">Home</div>
+          <div class="down">About us</div>
+          <div class="down">contact Us</div>
+          <div class="down">Blogs</div>
+          <div class="down">Privacy Policy</div>
+        </div>
+        <div class="btm1">
+          <h6>Our services</h6>
+            <div class="down">Hair Care</div>
+            <div class="down">Skin Care </div>
+            <div class="down">Body Care</div>
+            <div class="down">Bridal</div>
+            <div class="down">Events</div>
+          </div>
+          <div class="btm2"> 
+            <h6>Contact Us</h6>
+              <div class="down1">123 & 124,3rd flore,Ispahani</div>
+              <div class="down1">Centre</div>
+              <div class="down1">nungambakkam High Rd,<br>Thousand Lights, Chenni,<br>Tamil nadu 600034</div>
+              </div>  
+               <div class="btm2">
+              <h6>Get In Touch</h6>
+                <div class="down1">9145637742</div>
+                <div class="down1">care@naturels.in</div>
+                <div class="icon">
+                  <div><i class="fa-brands fa-facebook"></i></div>
+                  <div><i class="fa-brands fa-instagram"></i></div>
+                  <div><i class="fa-brands fa-whatsapp"></i></div>
+                  <div><i class="fa-brands fa-square-twitter"></i></div>
+                </div>
+              </div>
+     </div>
+     <div class="abc">
+      <hr>
+      <div class="all">@ 2023 naturals.All right reserved</div>
+     </div>
+    </body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Cormorant Upright' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Harmattan' rel='stylesheet'>
+  <style>
+   .rt{
+    position: absolute;
+    right:10px;
+    top:50%;
+    color:red;
+   }
+   .con{
+    position: relative;
+    width:100%;
+    height:100vh;
+   }
+   .lt{
+    position: relative;
+    top:50%;
+    left:10px;
+    color:red;
+   }
+   .dotcon{
+    position: absolute;
+    width:100%;
+    bottom: 10px;
+    justify-content: center;
+    display: flex;
+   }
+   .dotcon div{
+    padding: 3px;
+   }
+   .fa-solid{
+    color:coral;
+   }
+   .fa-regular{
+    color:darkgoldenrod;
+   }
+   *{
+    margin: 0%;
+   }
+   .main{
+    width: 100%;
+    background-color:whitesmoke;
+   }
+   nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(254, 254, 255);
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+   }
+   .right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .c2{
+    display: none;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .c1{
+    position: relative;
+  }
+  .c2 div{
+    padding-top: 15px;
+    color: rgb(30, 15, 232);
+  }
+  .c1:hover .c2{
+    display: block;
+  }
+   .left{
+    width: 15%;
+    height: 10vh;
+     }
+   .right a:hover{
+    font-size: 17px;
+   }
+   a{
+    text-decoration: none;
+   }
+   .magic{
+    width: 100%;
+    height: 40vh;
+    margin-top: 50px;
+  }
+   h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(8, 88, 236);
+    font-family: 'Artifika';
+  }
+   .black{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+   }
+   .bridal{
+    width: 55%;
+    height: 70vh;
+    background-color: aquamarine;
+   }
+   .look{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 70px;
+   }
+   .x{
+       letter-spacing: 5px;
+       font-size: 20px;
+       margin-bottom: 20px;
+       padding-left: 20px;
+      }
+   .y{
+    font-size: 45px;
+    padding-left: 20px;
+   }
+   .z{
+    font-size: 45px;
+    max-width: 440px;
+    padding-left: 20px;
+    }
+   button{
+    background-color: rgb(74, 12, 231);
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    }
+   .white{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+   }
+  .hai{
+    width: 55%;
+    height: 70vh;
+    background-color:aquamarine;
+  }
+  .jenny{
+    width: 100%;
+    background-color: rgb(103, 5, 194);
+    height: 84vh;
+    display: flex;
+   }
+   .jenny1{
+    width: 100%;
+    height: 100%;
+   }
+   .img{
+    width: 80%;
+    height: 100%;
+    padding-left: 40px;
+   }
+   .test{
+    width: 100%;
+    height: 40vh;
+   }
+   .durga{
+    flex-basis: 42%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Harmattan';
+   }
+   .bhavani{
+    flex-basis: 43%;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Harmattan';
+   }
+   .care{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 70px;
+    color:black;
+   }
+   .a{
+    letter-spacing:5px ;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+   }
+   .b{
+    font-size: 40px;
+    padding-left: 20px;
+    max-width: 380px;
+   }
+   .c{
+    font-size: 45px;
+    max-width: 440px;
+    padding-left: 20px;
+   }
+  .jo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    }
+   .joo{
+       letter-spacing: 5px;
+       font-size: 30px;
+       padding-top: 35px;
+       padding-left: 30px;
+       padding-bottom: 30px;
+      }
+      .jooo{
+        font-size: 45px;
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+  .button{
+    background-color:blue;
+    color:white;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    }
+    .see{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: space-around;
+    flex-direction: column;
+
+   }
+   .see1{
+        padding-left: 20px;
+        font-size: 20px;
+        letter-spacing: 10px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-style: italic;
+      }
+      .see2{
+        padding-left: 20px;
+        font-size: 50px;
+        max-width: 520px;
+        color: rgb(86, 8, 229);
+        font-style: italic;
+      }
+      .container{
+        display: flex;
+        width: 100%;
+        height: 49vh;
+        justify-content: space-around;
+      }
+      .ap{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin: 5px;
+        border: 1px solid black;
+        padding: 3px;
+        
+       }
+       .tp{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin: 5px;
+        border: 1px solid black;
+        padding: 3px;
+        
+       }
+       p{
+        text-indent: 10px;
+        text-align: justify;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        height: 5vh;
+       }
+       h4{
+        text-align: center;
+       
+       }
+       .btm{
+        width: 100%;
+        height: 50vh;
+        background-color:  rgb(103, 5, 194);
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 35px;
+        color: white;
+       }
+       .btm1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+       }
+       .btm2{
+        padding-top: 15px;
+       }
+       .down{
+        position: relative;
+        top: 10px;
+        line-height: 20px;
+       }
+       h6{
+        font-size: 20px;
+       }
+       .down1{
+        position: relative;
+        top: 24px;
+        line-height: 20px;
+       }
+       .abc{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(103, 5, 194);
+        border: none;
+       }
+       .all{
+        padding-left: 50px;
+        padding-top: 15px;
+       }
+       .icon{
+        position: relative;
+        top: 30px;
+        font-size:25px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+       }
+      
+ </style>
+  </head>
+<body><div class="main">
+    <nav>
+        <div class="left">
+          <img src="https://naturals.in/wp-content/uploads/2022/06/Naturals.svg"/>
+        </div>
+        <div class="right">
+            <div class="c1"><a href="nature.html">Our Services</a>
+              <div class="c2">
+             <div><a href="hair.html">hair care</a></div>
+             <div><a href="skincare.html">skin care</a></div>
+            </div>
+          </div>
+            <div><a href="bridalmakeup.htm">Bridal</a></div>
+            <div><a href="blogs.html">Blogs</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+        </div>
+    </nav>
+<div class="con">
+  <div class="lt" onclick="fun1()"></div>
+   <img id="i1" src="https://media.istockphoto.com/id/1002144830/photo/woman-sitting-at-beauty-salon-making-hairdo.jpg?s=612x612&w=0&k=20&c=PA5jkHDk4tI8GBM8e5lme_fWdk2j-9A_HY6vXjeh_jo=" width="100%" height="100%"/>
+  <div class="rt" onclick="fun()"></div>
+<div class="dotcon">
+  <div onclick="fun2(0,this)"><i class="fa-solid fa-circle"></i></div>
+  <div onclick="fun2(1,this)"><i class="fa-regular fa-circle"></i></div>
+  <div onclick="fun2(2,this)"><i class="fa-regular fa-circle"></i></div>
+  <div onclick="fun2(3,this)"><i class="fa-regular fa-circle"></i></div>
+  <div onclick="fun2(4,this)"><i class="fa-regular fa-circle"></i></div>
+</div>  
+</div>  
+<div class="magic">
+    <h1>What Our Magicians Can<br>Do For You</h1>
+</div> 
+<div class="black">
+    <image src="https://naturals.in/wp-content/uploads/2022/08/gorgeous-indian-bride-with-covered-head-1.jpg" />
+    <div class="bridal">
+      <div class="look">
+        <div class="x">EXCLUSIVELY BRIDAL</div>
+        <div class="y"><b>Bespoke bridal looks</b></div>
+        <div class="z">for brides that cover all services</div>
+        <div><button>Know More</button></div>
+      </div>
+    </div>
+ </div>
+<div class="jenny">
+ <div class="jenny1"> <img class="img" src="https://naturals.in/wp-content/uploads/2022/08/Jenelia-1-1.png"/></div>
+  <div class="jo">
+    <div class="joo">Skin care</div>
+    <div class="jooo">Naturals skincare services replenish, rejuvenate and revitalise your skin</div>
+    <div><button class="button">Know More</button></div>
+  </div>
+</div>
+<div class="white">
+  <img src="https://naturals.in/wp-content/uploads/2022/08/gorgeous-indian-bride-with-covered-head-2.png"/>
+  <div class="hai">
+    <div class="care">
+      <div class="a">Hair care</div>
+      <div class="b">Hairstyling and cuts from simple trims to a</div>
+      <div class="c"><b>couture look</b></div>
+      <div><button class="button">Know More</button></div>
+    </div>
+</div>
+</div>
+<div class="see">
+  <div class="see1">CUSTOMER TESTIMONIALS</div>
+  <div class="see2">See What Our Customers Has To Say About Us</div>
+  </div>
+  <div class="container">
+    <div class="durga"><img class="tp" src="https://images.pexels.com/photos/2747267/pexels-photo-2747267.jpeg?auto=compress&cs=tinysrgb&w=400"/>
+      <h4>Prasanna K </h4>
+      <p>Good service provided here.Stylist Selvi is very professional and renders perfect and a neat service.I recommened this branch and the stylist for services like waxing ,hair coloring</p>
+   
+  </div>
+    <div class="bhavani"><img class="ap" src="https://images.pexels.com/photos/1376042/pexels-photo-1376042.jpeg?auto=compress&cs=tinysrgb&w=400"/>
+      <h4>NIgamrutha V</h4>
+     <p>The facial and detan done by kanchana was mind blowing.though i wanted to get a head massage too, due to facial i was not able to take one.... knowing my face,she exceptionally did an amazing along with a quick massaga</p>
+  </div>
+  </div>
+       <div class="btm">
+    <div class="btm1">
+      <h6>Quick Links
+      </h6>
+        <div class="down">Home</div>
+        <div class="down">About us</div>
+        <div class="down">contact Us</div>
+        <div class="down">Blogs</div>
+        <div class="down">Privacy Policy</div>
+      </div>
+      <div class="btm1">
+        <h6>Our services</h6>
+          <div class="down">Hair Care</div>
+          <div class="down">Skin Care </div>
+          <div class="down">Body Care</div>
+          <div class="down">Bridal</div>
+          <div class="down">Events</div>
+        </div>
+        <div class="btm2"> 
+          <h6>Contact Us</h6>
+            <div class="down1">123 & 124,3rd flore,Ispahani</div>
+            <div class="down1">Centre</div>
+            <div class="down1">nungambakkam High Rd,<br>Thousand Lights, Chenni,<br>Tamil nadu 600034</div>
+            </div>  
+             <div class="btm2">
+            <h6>Get In Touch</h6>
+              <div class="down1">9145637742</div>
+              <div class="down1">care@naturels.in</div>
+              <div class="icon">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-whatsapp"></i></div>
+                <div><i class="fa-brands fa-square-twitter"></i></div>
+              </div>
+            </div>
+   </div>
+   <div class="abc">
+    <hr>
+    <div class="all">@ 2023 naturals.All right reserved</div>
+   </div>
+ </div>
+  
+     <script>
+     var i=0
+     var arr=["https://media.istockphoto.com/id/1002144830/photo/woman-sitting-at-beauty-salon-making-hairdo.jpg?s=612x612&w=0&k=20&c=PA5jkHDk4tI8GBM8e5lme_fWdk2j-9A_HY6vXjeh_jo=","https://media.istockphoto.com/id/902901426/photo/woman-in-mask-on-face-in-spa-salon.jpg?s=612x612&w=0&k=20&c=pfeDMnA1k53ff3bqdLI-xEvlvGUi2RfqHDoNr6gXaKY=","https://media.istockphoto.com/id/1324168834/photo/hair-cutting-tools-and-accessories-on-marble-background-with-space.jpg?s=612x612&w=0&k=20&c=KedDrdcPkyv8rjWBCZV9KS4CKx0fwHuKeapVDPRVwJo=","https://media.istockphoto.com/id/947995974/photo/young-woman-talking-with-her-hairstylist-during-a-salon-appointment.jpg?s=612x612&w=0&k=20&c=vovaeGd6R5BN2-si_wZRP2T4QZV9UQp2xZFQ31pG_dI=","https://media.istockphoto.com/id/1030255416/photo/empty-black-chairs-and-mirrors-in-barber-shop.jpg?s=612x612&w=0&k=20&c=CoWqcwd7UShmkvLuG1evh9zA4qHmil6-lJpXjmN-Vs4="]
+  function fun(){
+    let re=document.getElementsByClassName("fa-circle")
+    re[i].className="fa-regular fa-circle"
+   i++
+    
+      if(i>=arr.length){
+        i=0
+      }
+     
+      console.log(i)
+      document.getElementById("i1").src=arr[i]
+      re[i].className="fa-solid fa-circle"
+
+    }
+    function fun1()
+    {
+      let re=document.getElementsByClassName("fa-circle")
+    re[i].className="fa-regular fa-circle"
+i--;
+if(i==-1)
+{
+  i=arr.length-1
+}
+console.log(i)
+document.getElementById("i1").src=arr[i]
+re[i].className="fa-solid fa-circle"
+    }
+
+   
+ function fun2(ind,e)
+ {
+  let re=document.getElementsByClassName("fa-solid fa-circle")
+  if(re.length>0)
+  {
+    re[0].className="fa-regular fa-circle"
+  }
+e.firstChild.className="fa-solid fa-circle"
+  document.getElementById("i1").src=arr[ind]
+  i=ind
+ } 
+
+
+ function fun3(){
+  let re= document.getElementsByClassName("fa-circle")
+  re[i].className="fa-regular fa-circle"
+  
+  i++
+   
+     if(i>=arr.length){
+       i=0
+     }
+    
+     console.log(i)
+     document.getElementById("i1").src=arr[i]
+     re[i].className="fa-solid fa-circle"
+
+   }
+   
+
+  setInterval(fun3,3000)
+     
+    </script>
+    
+    
+</body>
+</html>

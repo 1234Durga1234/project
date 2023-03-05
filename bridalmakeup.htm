@@ -1,0 +1,757 @@
+<html>
+    <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Harmattan' rel='stylesheet'>
+        <style>
+               *{
+        margin: 0px;
+    }
+    nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+   }
+   .right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .c2{
+    display: none;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .c1{
+    position: relative;
+  }
+  .c2 div{
+    padding-top: 15px;
+    color: rgb(31, 18, 221);
+  }
+  .c1:hover .c2{
+    display: block;
+  }
+   .left{
+    width: 15%;
+    height: 10vh;
+     }
+   .right a:hover{
+    font-size: 17px;
+   }
+   a{
+    text-decoration: none;
+   }
+  .bridal{
+    width:100%;
+    height: 100vh;
+    margin: auto;
+    background-image:url("https://naturals.in/wp-content/uploads/2022/05/Naturals-Inner-Banner-6.jpg?id=11902");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 40px;
+  }
+  .bridal h1{
+    padding-top: 100px;
+    padding-left: 55%;
+    color: white;
+  }
+  .booking{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    height:70vh;
+    position:relative;
+    right: 10px;
+    margin-top: 20px;
+    left:40%;
+    
+  }
+  .booking input{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: 200px;
+  }
+ .button{
+    margin-left: 60px;
+    
+  }
+  .button button{
+    padding-left: 45px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+    color: white;
+    position: relative;
+    left: 170px;
+  }
+  ::placeholder{
+    padding-left: 20px;
+  }
+  .text{
+    width: 100%;
+    height: 35vh;
+  }
+  .p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height:30vh ;
+    font-size: 45px;
+padding-top: 20px;
+color: rgb(57, 57, 238);
+font-family: 'Artifika';
+  }
+  .imgs{
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .img-text{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .a1{
+     flex-basis: 28%;
+     padding-left: 30px;
+     font-size: 20px;
+  }
+  .b2{
+     flex-basis: 25%;
+     font-size: 20px;
+  }
+  .c3{
+     flex-basis: 20%;
+     font-size: 20px;
+  }
+  .d4{
+     flex-basis: 25%;
+     font-size: 20px;
+     padding-left: 20px;
+  }
+  .text-down{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    margin:auto;
+  }
+  .down1{
+    flex-basis: 25%;
+    font-size: 17px;
+    padding-left: 20px;
+  
+  }
+  .down2{
+    flex-basis: 25%;
+    font-size: 17px;
+   
+  }
+  .down3{
+    flex-basis: 25%;
+    font-size: 17px;
+    
+  }
+  .down4{
+    flex-basis: 25%;
+    font-size: 17px;
+    height: 30vh;
+    
+  }
+  .life{
+    width: 90%;
+    height: 40vh;
+   margin: auto;
+  }
+  .life-text{
+    color: rgb(80, 14, 186);
+    font-size: 45px;
+    font-family: 'Artifika';
+  }
+  .india{
+    font-size: 18px;
+    text-indent: 15px;
+    padding-top: 25px;
+    line-height: 25px;
+  }
+  .bridal-img{
+    width: 40%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .bridal-img img{
+    width: 100%;
+    height: 100vh;
+  }
+  .main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+   }
+   .leftimg{
+    width: 80%;
+    padding-top: 50px;
+    padding-left:80px;
+   }
+   .leftimg img{
+    width: 90%;
+    height: 50vh;
+    padding-left: 30px;
+    padding-top: 20px;
+   }
+   .righttext{
+    width: 100%;
+    height: 80vh;
+   }
+   .h1{
+    padding-top: 100px;
+    padding-left: 30px;
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Artifika';
+   }
+   .h4{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: 'Harmattan';
+   }
+   .main1{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+   }
+   .leftimg1{
+    width: 80%;
+    padding-top: 50px;
+    padding-left:80px;
+   }
+   .leftimg1 img{
+    width: 90%;
+    height: 50vh;
+    padding-left: 30px;
+    padding-top: 20px;
+   }
+   .righttext1{
+    width: 100%;
+    height: 80vh;
+   }
+   .h2{
+    padding-top: 100px;
+    padding-left: 30px;
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Artifika';
+   }
+   .h5{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: 'Harmattan';
+   }
+   .main2{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+   }
+   .leftimg2{
+    width: 80%;
+    padding-top: 50px;
+    padding-left:80px;
+   }
+   .leftimg2 img{
+    width: 90%;
+    height: 50vh;
+    padding-left: 30px;
+    padding-top: 20px;
+   }
+   .righttext2{
+    width: 100%;
+    height: 80vh;
+   }
+   .h3{
+    padding-top: 100px;
+    padding-left: 30px;
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Artifika';
+   }
+   .h6{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: 'Harmattan';
+   }
+   .main3{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+   }
+   .leftimg3{
+    width: 80%;
+    padding-top: 50px;
+    padding-left:80px;
+   }
+   .leftimg3 img{
+    width: 90%;
+    height: 50vh;
+    padding-left: 30px;
+    padding-top: 20px;
+   }
+   .righttext3{
+    width: 100%;
+    height: 80vh;
+   }
+   .aa{
+    padding-top: 100px;
+    padding-left: 30px;
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Artifika';
+   }
+   .bb{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+    text-indent: 20px;
+    font-family: 'Harmattan';
+   }.event-package{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .event{
+            width: 100%;
+            height: 70vh;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        .package{
+            width: 100%;
+            height: 75vh;
+            margin-top: 30px;
+            margin-right: 10px;
+            background-color: rgb(148, 31, 203);
+        }
+        h4{
+            padding-top: 20px;
+            padding-left: 50px;
+            font-size: 30px;
+            position: relative;
+            top: 1px;
+            color: white;
+        }
+        .grid{
+            width: 80%;
+            height: 60vh;
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 5px;
+            margin-top: 10px;
+
+        }
+        .grid-c1{
+            border: 1px solid white;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+        .grid-c2{
+            width: 200px;
+            height: 60px;
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+            padding-top: 6px;
+            color: white;
+        }
+        .choose{
+            padding-top: 17px;
+            padding-left: 70px;
+            font-size: 40px;
+            position: relative;
+            top: 1px;
+
+        }
+        .sangeeth{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+
+        }
+        .sangeeth-text{
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .wedding{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .wedding-text{
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .booking1{
+    width: 85%;
+    height: 100vh;
+    background-color: rgb(214, 184, 233);
+    margin-left: 70px;
+    margin-bottom:40px ;
+    display: flex;
+    justify-content: space-between;
+   }
+   .booktext{
+           width: 100%;
+   }
+   .bookimg1{
+    width: 80%;
+  
+   }
+   .bookimg1 img{
+    width: 80%;
+    height: 80vh;
+   }
+   p{
+    padding-top: 25px;
+    padding-left:30px;
+    font-size: 20px;
+   }
+  .p1{
+    padding-top: 35px;
+    padding-left:30px;
+    color: rgb(50, 1, 95);
+    font-size: 45px;
+  }
+  .booktext-box{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  input{
+    padding: 10px;
+  }
+  .booktext-box1{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .form{
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  button{
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: rgb(41, 3, 76);
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .btm{
+        width: 100%;
+        height: 50vh;
+        background-color:rgb(103, 5, 194);
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 35px;
+        color: white;
+       }
+       .btm1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+       }
+       .btm2{
+        padding-top: 15px;
+       }
+       .down{
+        position: relative;
+        top: 10px;
+        line-height: 20px;
+       }
+       h6{
+        font-size: 20px;
+       }
+       .down1{
+        position: relative;
+        top: 24px;
+        line-height: 20px;
+       }
+       .date{
+        padding-left: 35px;
+        padding-right: 30px;
+        padding-top: 10px;
+    }  
+    .abc{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(103, 5, 194);
+        border: none;
+       }
+       .all{
+        padding-left: 50px;
+        padding-top: 15px;
+       }
+       .icon{
+        position: relative;
+        top: 30px;
+        font-size:25px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+       }   
+  
+</style>
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <img src="https://naturals.in/wp-content/uploads/2022/06/Naturals.svg"/>
+            </div>
+            <div class="right">
+             <div class="c1"><a href="nature.html">Our Services</a>
+            <div class="c2">
+            <div><a href="hair.html">hair care</a></div>
+            <div><a href="skincare.html">skin care</a></div>
+            </div>
+            </div>
+            <div><a href="bridal.html">Bridal</a></div>
+            <div><a href="blogs.html">Blogs</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+        </div>
+    </nav>
+    <div class="bridal">
+     <h1>Book A FREE Makeup Trial</h1>
+     <div class="booking">
+        <input type="text" placeholder="YOUR NAME">
+        <input type="text" placeholder="MOBILE NUMBER">
+        <input type="email" placeholder="EMAIL ID">
+        <input type="date">
+        <div class="button"><button>BOOK NOW</button></div>
+     </div>
+    </div>
+    <div class="text">
+      <div class="p">
+        <div>Why Choose Naturals</div>
+        <div>Get The Royal Treatment Fit For A Queen</div>
+        </div>
+        </div>
+        <div class="imgs">
+         <div><img src="https://naturals.in/wp-content/uploads/2022/05/icons8-warranty-100-80x80.png"/></div>
+         <div><img src="https://naturals.in/wp-content/uploads/2022/05/icons8-beautician-100-80x80.png"/></div>
+         <div><img src="https://naturals.in/wp-content/uploads/2022/05/icons8-experience-100-80x80.png"/></div>
+         <div><img src="https://naturals.in/wp-content/uploads/2022/05/icons8-family-two-men-100-80x80.png"/></div>
+        </div>
+        <div class="img-text">
+          <b class="a1">Top Notch Quality </b>
+          <b class="b2">Personalised Makeup</b>
+          <b class="c3">Experienced Stylists</b>
+          <b class="d4">Include Your Friends and Family</b>
+        </div>
+        <div class="text-down">
+        <div class="down1">No matter what your vision for your big day, leave it to us to bring them to life!</div>
+        <div class="down2">Subtle, glamorous, minimalist or trendy – watch yourself transform as our stylists wave their magic wands</div>
+        <div class="down3">Our professionals take care of everything, from makeup, saree & dhoti draping to hair styling and pre-bridal makeup services, to ensure you sparkle on your big day.</div>
+        <div class="down4">Weddings are never just about the bride and groom! Give your friends and family their time in the spotlight with our exclusive packages for Friends of the Bride and Groom.</div>
+        </div>
+        <div class="life">
+          <p class="life-text">Our Wedding Looks Bring All Your Dreams To Life!</p>
+          <div class="india">Indian weddings are larger than life! With the number of events involved, such as mehendi, cocktail, sangeet, haldi, muhurtham, and reception, it is natural for the bride and the groom to want the best of looks ranging from traditional to contemporary. We make all of your wedding dreams come true with our professional groom and bridal makeup services at Naturals.</div>
+        </div>
+        <div class="bridal-img">
+          <img src="https://naturals.in/wp-content/uploads/2022/04/bridal-1.jpg"/>
+        </div>
+        <div class="main">
+          <div class="leftimg">
+              <img src="https://naturals.in/wp-content/uploads/2022/04/bridal-3.jpg"/>
+          </div>
+          <div class="righttext">
+              <div class="h1">Customised Bridal Makeup</div>
+              <div class="h4">Our celebrity artists create the bride and groom makeup looks depending on different face shapes and complexions to highlight their natural features and make them look stellar. With the help of professional equipment and techniques, our expert stylists create everything from classic, traditional looks to chic, modern looks for women and sharp, dapper looks for men.</div><br>
+          </div>
+         </div>
+         <div class="main1">
+          <div class="righttext1">
+              <div class="h2">Hairstyles</div>
+              <div class="h5">Hairstyling is just as important as wedding day makeup. Our stylists work magic on your hair to create anything from trendy to traditional styles that perfectly complement your outfit and the occasion. Not just that, we customize accessories based on your outfit and makeup style to tie the whole look together.
+
+              </div><br>
+          </div>
+          <div class="leftimg1">
+              <img src="https://naturals.in/wp-content/uploads/2022/04/bridal-4.jpg"/>
+          </div>
+        </div>
+        <div class="main2">
+          <div class="leftimg2">
+              <img src="https://naturals.in/wp-content/uploads/2022/04/bridal-5.jpg"/>
+          </div>
+          <div class="righttext2">
+              <div class="h3">Bridal Saree/Groom Dhoti Draping</div>
+              <div class="h6">In a diverse country like India, wedding traditions and rituals change according to the varied religions and regions, influencing wedding aesthetics. Our stylists are adept at the different saree and dhoti draping techniques and will make you look flawless no matter the style.</div><br>
+          </div>
+         </div>
+         <div class="main3">
+          <div class="righttext3">
+              <div class="aa">Mehendi
+              </div>
+              <div class="bb">Weddings are incomplete without Mehendi. Nowadays, it is more than just tradition. Brides and grooms can adorn their hands with beautiful visual stories or even abstract art by skilled artists. From minimal designs to extravagant artworks, the professional Mehendi artists at Naturals will help you achieve the look you want for your special day. </div><br>
+          </div>
+          <div class="leftimg3">
+              <img src="https://naturals.in/wp-content/uploads/2022/04/bridal-6.jpg"/>
+          </div>
+        </div>
+        <div class="event-package">
+          <div class="event">
+              <p class="choose">Choose Your Event</p>
+              <div class="sangeeth">
+                  <img src="https://naturals.in/wp-content/uploads/2022/05/sangeet.png"/>
+                  <img src="https://naturals.in/wp-content/uploads/2022/05/baby.png"/>
+                  <img src="https://naturals.in/wp-content/uploads/2022/05/mehndi.png"/>
+              </div>
+              <div class="sangeeth-text">
+                  <span>Sangeeth</span>
+                  <span>Baby Shower</span>
+                  <span>Haldi/ Mehendi</span>
+              </div>
+              <div class="wedding">
+                  <img src="https://naturals.in/wp-content/uploads/2022/05/icons8-wedding-64.png"/>
+                  <img src="https://naturals.in/wp-content/uploads/2022/05/icons8-music-festival-64.png"/>
+                  <img src="https://naturals.in/wp-content/uploads/2022/05/icons8-party-64-2-1.png"/>
+              </div>
+              <div class="wedding-text">
+                  <span>Wedding</span>
+                  <span>Reception</span>
+                  <span>Party</span>
+              </div>
+          </div>
+          <div class="package">
+          <h4> CHOOSE YOUR PACKAGE</h4>
+           <div class="grid">
+           <div class="grid-c1">Classic Makeup</div>
+           <div class="grid-c1">HD Makeup</div>
+           <div class="grid-c1">Air Brush Makeup</div>
+           <div class="grid-c1">Gloden glow Pakage</div>
+           <div class="grid-c2">Absolute Radiance Package</div>
+           <div class="grid-c1">Lightening package</div>
+           <div class="grid-c2">Friends of Bride pakage</div>
+           <div class="grid-c1">Kids Makeup</div>
+           </div>
+          </div>
+      </div>
+      <div class="booking1">
+        <div class="booktext">
+          <p>BOOKING</p>
+          <h1 class="p1">Make An Appoinment</h1>
+          <div class="booktext-box">
+            <div><input type="text" placeholder="YOUR NAME"></div>
+            <div><input type="text" placeholder="MOBILE NUMBER"></div>
+          </div>
+          <div class="booktext-box1">
+            <div><input class="date" type="date"/></div>
+            <div><input type="email" placeholder="MOBILE NUMBER"></div>
+          </div>
+          <div class="form">
+            <form>
+              <textarea rows="7" cols="60">
+                NOTES
+              </textarea>
+            </form>
+          </div>
+          <div><button>BOOK NOW</button></div>
+          </div>
+          <div class="bookimg1">
+            <img src="https://naturals.in/wp-content/uploads/2022/09/form-section.png"/>
+          </div>
+          </div>
+          <div class="btm">
+            <div class="btm1">
+              <h6>Quick Links</h6>
+                <div class="down">Home</div>
+                <div class="down">About us</div>
+                <div class="down">contact Us</div>
+                <div class="down">Blogs</div>
+                <div class="down">Privacy Policy</div>
+              </div>
+              <div class="btm1">
+                <h6>Our services</h6>
+                  <div class="down">Hair Care</div>
+                  <div class="down">Skin Care </div>
+                  <div class="down">Body Care</div>
+                  <div class="down">Bridal</div>
+                  <div class="down">Events</div>
+                </div>
+                <div class="btm2"> 
+                  <h6>Contact Us</h6>
+                    <div class="down1">123 & 124,3rd flore,Ispahani</div>
+                    <div class="down1">Centre</div>
+                    <div class="down1">nungambakkam High Rd,<br>Thousand Lights, Chenni,<br>Tamil nadu 600034</div>
+                    </div>  
+                     <div class="btm2">
+                    <h6>Get In Touch</h6>
+                      <div class="down1">9145637742</div>
+                      <div class="down1">care@naturels.in</div>
+                      <div class="icon">
+                        <div><i class="fa-brands fa-facebook"></i></div>
+                        <div><i class="fa-brands fa-instagram"></i></div>
+                        <div><i class="fa-brands fa-whatsapp"></i></div>
+                        <div><i class="fa-brands fa-square-twitter"></i></div>
+                      </div>
+                    </div>
+        </div>
+           <div class="abc">
+            <hr>
+            <div class="all">@ 2023 naturals.All right reserved</div>
+           </div>
+           </body>
+    </body>
+</html>
